@@ -1,0 +1,19 @@
+<div class="card-container">
+  <div class="card">
+    <img [src]="product.image" [alt]="product.title" />
+    <div class="card-body">
+      <h2>{{ product.title }}</h2>
+      <div class="attribute"><strong>Price:</strong> {{ product.price }} €</div>
+      <div class="attribute">
+        <strong>Category:</strong> {{ product.category }}
+      </div>
+      <div class="attribute">
+        <strong>Description:</strong> {{ product.description }}
+      </div>
+      <div class="attribute">
+        <strong>Rating:</strong> {{ product.rating.rate }}
+      </div>
+    </div>
+    <button [routerLink]="''" class="btn btn-outline-secondary">Volver</button>
+  </div>
+</div>
